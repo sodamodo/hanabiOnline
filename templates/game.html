@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.0.min.js"></script>
+    <title></title>
+<style>
+.card {
+    height:100px;
+    width:50px;
+    border-style:solid;
+    border-color:black;
+}
+</style>
+
+</head>
+<body>
+
+{% for color in handcolors %}
+
+    <div class="card" style="background-color:{{ color.color }}"></div>
+{% endfor %}
+
+<script>
+    $(document).ready(function() {
+
+       // setInterval(myMethod, 50);
+});
+</script>
+</body>
+</html>
